@@ -15,8 +15,8 @@ wifi 模块无起始位设置，默认是 1bit 起始位。
 typedef enum APC_CMD_T{
     // 不加密命令
     APC_CMD_NONE                = 0x00,   // 空类型
-	APC_CMD_SOCKET_ON			= 0x10,   //控制开关
-	APC_CMD_SOCKET_OFF			= 0x11,	
+    APC_CMD_SOCKET_ON			= 0x10,   //控制开关
+    APC_CMD_SOCKET_OFF			= 0x11,	
     APC_CMD_COLOR_SET			= 0x20,	// 控制发送串口
  /* ShowHome APP products commands */
     CMD_THEME_SET           = 0x30;     // Change color or theme
