@@ -55,14 +55,14 @@ typedef enum UART_CMD_T{
     CMD_MAX
 }UART_Cmd_T;
     
-// Command type for light strings controlled by WIFI via bluetooth	
+// Command type for light strings controlled by WIFI
 typedef struct{
     u8 version;           // protocol version
     u8  crc8;             // crc checksum
     union{
       u8 buffer;
       struct{
-	u8 ack      : 1;
+	u8 ack      : 1;   // wifi send data to mcu, this bit always reset to 0.  mcu send data to wifi, if ack = 1, success, ack = 0 error
 	u8 ctrl     : 7;
       }info;
     }cmd;		  // command content            
