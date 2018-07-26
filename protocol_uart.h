@@ -33,7 +33,7 @@ typedef unsigned int u32;
 
 #pragma message("In 32Bit machine \n")
 
-// 基本类型
+// type redefine
 typedef char s8;
 typedef unsigned char u8;
 typedef short s16;
@@ -44,7 +44,7 @@ typedef unsigned long u32;
 #endif
 
 #define UART_VERSION			0x10
-#deifne	UART_BUFFER_MAX			20
+#define	UART_BUFFER_MAX			20
 
 // Command type for chritmas tree controlled by WIFI
 typedef enum UART_CMD_T{
@@ -73,8 +73,8 @@ typedef struct{
 
 // Dimmer device
 typedef struct{
-	u8 no;		  	// 几号灯
-	u8 intensity; 		// 光强度
+	u8 no;		  	// Lamp number
+	u8 intensity; 		// brightness intensity
 }UART_Light_T;
 
 #ifdef __cplusplus
