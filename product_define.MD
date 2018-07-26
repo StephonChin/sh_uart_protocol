@@ -1,7 +1,12 @@
-#Products
+# Products
+```
+    To control the christmas tree or light strings via bluetooth by wifi.
+    The protocol is 
+```
 
 ## Christmas Tree
 ### command information
+```
     "TurnOn":0x10,
     "TurnOff":0x11,
     "TurnOnTreeTop":0x12,
@@ -9,23 +14,26 @@
     "ColorChange":0x14,
     "Twinklen":0x15,
     "TimeSetting":0x16
-    
-##Light String
-### command summarize
+```    
 
+## Light String
+### command summarize
+```
     "TurnOn":0x30,
     "TurnOff":0x31,
     "ThemeSet":0X32,
     "Mode":0x33,
     "ShowMode":0x34,
     "TimeSet":0x035
-    
-### command information
-typedef enum APC_CMD_T{
-    CMD_NONE          = 0x00,   // 空类型
-    CMD_SOCKET_ON			= 0x30,   //控制开关
-    CMD_SOCKET_OFF		= 0x31,
+```
 
+### command information
+```
+typedef enum APC_CMD_T{
+    CMD_NONE                = 0x00, 
+    CMD_SOCKET_ON           = 0x30, 
+    CMD_SOCKET_OFF          = 0x31;
+    
     CMD_THEME_SET           = 0x32,     // Change color or theme
                                         // len = 1  >>          Value from 0 to 0x1C
                                         //---------------------------------------------------
@@ -103,3 +111,4 @@ typedef enum APC_CMD_T{
                                         //                      other - enable
 	APC_CMD_MAX
 }APC_CMD_T;
+```
