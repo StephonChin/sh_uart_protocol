@@ -2,41 +2,39 @@
 # 简介
 灯串通过提供的功能繁多，语音通过会话进行控制，即先说
 
-    **Ok google, ask show home APP** 
-    **Ok google, talk to show home APP** 
-    **Alexa, ask show home APP** 
-    **Alexa, talk to show home APP** 
+    "Ok google, ask ShowHome APP"  or   "Ok google, talk to ShowHome APP"
+    "Alexa, ask ShowHome APP"      or   "Alexa, talk to ShowHomee APP" 
 
     
     
-之后可以联系控制，例如改变颜色 *change color to red*，音响会时刻获取和解析你所说的话,停止对灯串进行控制则可以直接说 **goodbye** 退出会话，之后你说的话，音箱不会再获取。 
+之后可以联系控制，例如改变颜色 "change color to red"，音响会时刻获取和解析你所说的话,停止对灯串进行控制则可以直接说 "goodbye" 退出会话，之后你说的话，音箱不会再获取。 
 
 ## 开启会话，进行控制
 
-    Ok Google, ask show home app
-    Ok Google, talk show home app
-
-    Alexa, ask show home app
-    Alexa, talk show home app
+    "Ok google, ask ShowHome APP"  or   "Ok google, talk to ShowHome APP"
+    "Alexa, ask ShowHome APP"      or   "Alexa, talk to ShowHomee APP" 
     
-## 开关 On/Off
+## 开关
 
-    - turn on 
-    - turn off
-    - turn on the lights
-    - turn off the lights
+    - "Turn on"   or  "Turn on the lights"
+    - "Turn off"  or  "Turn off the lights"
      
      
-## 设置颜色 color setting
+## 设置颜色模式
 
+    设置颜色和模式时可以Change to 某个颜色模式，或者直接说颜色模式
+    比如要设置成红色：Change to red / Red
+    比如要设置成闪烁：Change to blink / Blink
+    
+    支持的颜色和模式如下：
     Red
-    Green
+    Green   
     Blue
     Orange
     Pink
     Spring Green
     Gold
-    Deep Pink
+    Peach
     Lawn Green
     Magenta
     Cyan
@@ -55,9 +53,8 @@
     Thanksgiving Day
     St. Patrick's Day
     Halloween
-    Sun
-    Earth
     Multi Color
+    
     Steady
     Blink
     Sparkle
@@ -68,6 +65,7 @@
     Fireworks
     Polar
     Color Show
+    
     Christmas Show
     Valentines Day Show
     Independence Day Show
@@ -76,74 +74,44 @@
     Halloween Show
     MultiColor Show
 
-    change to Red
-    change to Green
-    change to Blue
-    change to Orange
-    change to Pink
-    change to Spring Green
-    change to Gold
-    change to Deep Pink
-    change to Lawn Green
-    change to Magenta
-    change to Cyan
-    change to Yellow
-    change to Purple
-    change to White
-    change to Cold White
-    change to Warm White
-    change to Spring
-    change to Summer
-    change to Autumn
-    change to Winter
-    change to Christmas Day
-    change to Valentines' Day
-    change to Independence Day
-    change to Thanksgiving Day
-    change to St. Patrick's Day
-    change to Halloween
-    change to Sun
-    change to Earth
-    change to Multi Color
-    change to Steady
-    change to Blink
-    change to Sparkle
-    change to Instead
-    change to Wave
-    change to Roll
-    change to Fade
-    change to Fireworks
-    change to Polar
-    change to Color Show
-    change to Christmas Show
-    change to Valentines Day Show
-    change to Independence Day Show
-    change to Thanksgiving Day Show
-    change to St. Patrick's Day Show
-    change to Halloween Show
-    change to MultiColor Show
-
 
 
 ## 设置定时
-
-    3 hours
-    set timer 3 hours
+    支持2,4,6,8小时定时设置
+    
+    2,4,6,8小时循环定时：
+    Set timer 2/4/6/8 hours
+    
+    定时关：
+    Timer off
+    
 ## 音乐灯
 
-    dance
-    start to dance
-    stop dancing
+    开启音乐模式：Start to dance
+    关闭音乐模式：Stop dancing
     
 ## 举例
 
-    user: ok google, talk to show home.
-    google: ok, show home is ready.
-    user: turn on
-    google: ok, the light have been turn on.
-    user: change to red.
-    google: ok, the color have change to red.
-    user: start to winter.
-    google: ok.
-    user: goodbyte.
-    google: byte.
+    User:       Ok google, talk to ShowHome APP.
+    
+    Google:     Ok, ShowHome APP is ready.
+    
+    User:       Turn on.
+    
+    Google:     Ok, the light have been turn on.
+    
+    User:       Change to red.
+    
+    Google:     Ok, the color have change to red.
+    
+    User:       Christmas.
+    
+    Google:     Ok, the color have change to Christmas.
+
+    User:       Turn off.
+    
+    Google:     Ok, the light have been turn off
+    
+    User:       Goodbye!
+    
+    Google:     Bye!
