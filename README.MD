@@ -28,7 +28,7 @@ typedef enum APC_CMD_T{
                                         //                      0x04 - Pink
                                         //                      0x05 - Spring Green
                                         //                      0x06 - Gold
-                                        //                      0x07 - Deep Pink
+                                        //                      0x07 - fuchsia
                                         //                      0x08 - Lawn Green
                                         //                      0x09 - Magenta
                                         //                      0x0A - Cyan
