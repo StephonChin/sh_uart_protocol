@@ -15,6 +15,12 @@ wifi 模块无起始位设置，默认是 1bit 起始位。
 typedef enum APC_CMD_T{
     // 不加密命令
     CMD_NONE          = 0x00,   // 空类型
+    CMD_WIFI_STATUS = 0X01,  // WiFi 状态
+                            // len =1; payload[0] = 0x01 -- 断网状态
+                            // len =1; payload[0] = 0x02 -- WiFi正在链接路由
+                            // len =1; payload[0] = 0x03 -- 连接到路由。 
+                            // len =1; payload[0] = 0x04 -- 连接到服务器。 
+                        
     CMD_SOCKET_ON			= 0x30,   //控制开关
     CMD_SOCKET_OFF		= 0x31,
  /* ShowHome APP products commands */
