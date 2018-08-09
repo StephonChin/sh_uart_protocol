@@ -3,6 +3,16 @@
     To control the christmas tree or light strings via bluetooth by wifi.
     The protocol is 
 ```
+## General command
+```
+    "WIFI_STATUS":0x01
+```
+```
+    len = 1
+    payload = 0x01    - 待机状态
+            = 0x02    - 正在连接中
+            = 0x03    - 连接成功
+···
 
 ## Christmas Tree
 ### command information
